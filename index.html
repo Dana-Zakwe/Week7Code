@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="search-container">
+            <input type="text" id="cityInput" placeholder="Enter the city..." oninput="updateCityName()" />
+            <button class="search-btn" onclick="getWeather()">Search</button>
+        </div>
+        <div class="weather-info">
+            <h2 id="cityName">City Name</h2>
+            <p id="temperature"></p>
+            <p id="weatherDetails"></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>
+            Project created by Andiswa Zakwe, hosted on
+            <a href="https://myweathercode.netlify.app/" target="_blank">Netlify</a> and available on
+            <a href="https://github.com/Dana-Zakwe/Weather" target="_blank">GitHub</a>.
+        </p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
